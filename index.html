@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Первая самостоятельная работа</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
     <!-- Header -->
-<header class="header">
+<header class="header" id="header">
     <div class="container"> 
         <div class="header_all">
             
@@ -19,9 +20,9 @@
         </div>
 
         <nav class="header-left">
-            <a class="header_link" href="#">Услуги</a>
-            <a class="header_link" href="#">Портфолио</a>
-            <a class="header_link" href="#">Стоимость</a>
+            <a class="header_link" href="#" data-scroll="#doit">Услуги</a>
+            <a class="header_link" href="#" data-scroll="#works">Портфолио</a>
+            <a class="header_link" href="#" data-scroll="#display">Стоимость</a>
         </nav>
 
         <button class="burger" type="button">
@@ -52,7 +53,7 @@
     </div><!-- Main -->
 
     <!-- What I Do? -->
-    <div class="doit">
+    <div class="doit" id="doit">
         <div class="container">
             <h1 class="doit_text_main">Что я умею делать?</h1>
             <div class="doit_main">
@@ -78,7 +79,7 @@
     </div><!-- What I Do? -->
 
     <!-- Works -->
-    <div class="works">
+    <div class="works" id="works">
         <div class="container">
             <h1 class="doit_text_main">Примеры работ</h1>
             <div class="works_main">
@@ -100,7 +101,7 @@
     </div><!-- Works -->
 
     <!-- Display -->
-    <div class="display">
+    <div class="display" id="display">
         <div class="container">
             <div class="dp_main">
                 <div class="dp_text_m">Адаптивная верстка под все устройства и браузеры от 1000 ₽ всего за 4 часа.*</div>
@@ -137,5 +138,8 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html> 
